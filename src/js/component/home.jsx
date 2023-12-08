@@ -3,6 +3,7 @@ import Header from "./header";
 import Navbar from "./navbar";
 import Sort from "./sort";
 import Cards from "./cards";
+import Discord from "./discord";
 
 //Los arrays de objetos van con {}
 //Los arrays normales van con [] - hay que buscar mas informacion sobre esto.
@@ -20,7 +21,7 @@ import Cards from "./cards";
 
 const Home = () => {
   return (
-    <div className="text-center">
+    <div className="text-center bg-light">
       <Header />
       <Navbar />
       <Sort />
@@ -28,6 +29,7 @@ const Home = () => {
         Learn about our challenge types ⭐
       </p>
       <Cards />
+      <Discord />
     </div>
   );
 };

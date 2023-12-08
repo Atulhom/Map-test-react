@@ -2,9 +2,9 @@ import React from "react";
 
 function Navbar(params) {
   return (
-    <nav className="navbar navbar-expand-lg mx-5 p-4 fw-bold font-monospace">
+    <nav className="navbar navbar-expand-lg p-4 fw-bold font-monospace bg-white">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand ms-4" href="#">
           ☂️Frontend Mentor
         </a>
         <div className="" id="navbarNav">
