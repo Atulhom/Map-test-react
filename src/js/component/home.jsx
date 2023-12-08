@@ -4,6 +4,7 @@ import Navbar from "./navbar";
 import Sort from "./sort";
 import Cards from "./cards";
 import Discord from "./discord";
+import Footer from "./footer";
 
 //Los arrays de objetos van con {}
 //Los arrays normales van con [] - hay que buscar mas informacion sobre esto.
@@ -30,6 +31,7 @@ const Home = () => {
       </p>
       <Cards />
       <Discord />
+      <Footer />
     </div>
   );
 };
