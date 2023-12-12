@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "./card";
 
 function Cards(params) {
   let infoCards = [
@@ -48,21 +49,28 @@ function Cards(params) {
 
   let infoCardsResult = infoCards.map(function (item, index) {
     return (
-      <div className="col-md-4 mb-4">
-        <div className="card" style={{ width: "24rem" }}>
-          <img src={item.imgs} className="card-img-top" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title text-start">{item.title}</h5>
-          </div>
-          <ul className="navbar mx-3 fw-bold">
-            <li className="list-group-item">{item.links}</li>
-            <li className="list-group-item">{item.level}</li>
-          </ul>
-          <div className="card-text mx-3 text-start">
-            <p>{item.text}</p>
-          </div>
-        </div>
-      </div>
+      // <div className="col-md-4 mb-4">
+      //   <div className="card" style={{ width: "24rem" }}>
+      //     <img src={item.imgs} className="card-img-top" alt="..." />
+      //     <div className="card-body">
+      //       <h5 className="card-title text-start">{item.title}</h5>
+      //     </div>
+      //     <ul className="navbar mx-3 fw-bold">
+      //       <li className="list-group-item">{item.links}</li>
+      //       <li className="list-group-item">{item.level}</li>
+      //     </ul>
+      //     <div className="card-text mx-3 text-start">
+      //       <p>{item.text}</p>
+      //     </div>
+      //   </div>
+      // </div>
+      <Card
+        url={item.imgs}
+        title={item.title}
+        links={item.links}
+        level={item.level}
+        text={item.text}
+      />
     );
   });
 
